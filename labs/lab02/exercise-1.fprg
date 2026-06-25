@@ -4,17 +4,16 @@
         <attribute name="name" value="exercise-1"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-06-25 03:07:33 PM"/>
+        <attribute name="saved" value="2026-06-25 03:33:54 PM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMjo1OTozMyBQTTsyNzYw"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMzowNzozMyBQTTsyOzI4NjM="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMzozMzo1NCBQTTszOzI4NjY="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="ringgit" type="Real" array="False" size=""/>
-            <declare name="baht" type="Real" array="False" size=""/>
             <input variable="money"/>
-            <assign variable="baht" expression="(ringgit * 0.98) * 8.07"/>
+            <input variable="exchangeRate"/>
+            <assign variable="baht" expression="(ringgit * 0.98) * exchangeRate"/>
             <output expression="baht" newline="True"/>
         </body>
     </function>
